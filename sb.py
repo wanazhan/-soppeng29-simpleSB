@@ -27,7 +27,7 @@ while True:
                     if msg.toType == 2:
                         may = client.getProfile().mid
                         if may in str(msg.contentMetadata) and 'MENTION' in str(msg.contentMetadata):
-                            pilih = ['Siapa Tag Wan Sila Tanggungjawab','Sapa tag dia Wan?, Rindu Ker?','Sapa Nie? Alamak ada yang mention?','Alamak kena mention lag, Nak wan Teman?','Mentioned Jer, Kiss Takder?, Syempoi awak nie']
+                            pilih = ['Siapa Tag Wan Sila Tanggungjawab','Hi Tq Awak Mentioned Wan?, Rindu Wan Ker, Mentioned?','Hi Sayang, Ader apa tu? Oh, awak apa khabar sayang?','Alamak kena mention lagi, Nak wan Teman?','Mentioned Jer, Kiss Takder?, Syempoi awak nie']
                             rslt = random.choice(pilih)
                             client.sendText(msg.to, str(rslt))
                         else:
@@ -151,7 +151,7 @@ while True:
                                 pass
                             else:
                                 cctv['sidermem'][op.param1] += "\n~ " + Name
-                                pref=['Sini La sembang','hai awak jom chat ngan wan','aloo..','yer','buat apa tu','halo','sini kita bergurau senda']
+                                pref=['Sini La sembang','hai awak jom chat ngan Wan','Hi Cinta Ku Semua','Sayang Awak Buat Per tu','Awak buat apa tu','heloo All TVG','Jomkita bergurau senda']
                                 client.sendText(op.param1, str(random.choice(pref))+' '+Name)
                         else:
                             pass
